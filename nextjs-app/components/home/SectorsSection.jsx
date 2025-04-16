@@ -30,7 +30,7 @@ function SectorsSection({ content }) {
             ))}
           </ul>
           <Image
-            src={content.imageUrl}
+            src={content?.imageUrl || "/images/france.jpg"}
             width={600}
             height={600}
             alt="Introduction section of wimbee GIF"
