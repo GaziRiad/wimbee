@@ -62,17 +62,17 @@ export default async function Home({ params: { locale } }) {
         <link rel="canonical" href={canonicalUrl} />
       </Head>
       <main>
-        <Hero
+        {/* <Hero
           title={data?.hero?.title}
           video={data?.hero?.backgroundVideoUrl}
           locale={locale}
-        />
-        <LogoCarousel logos={data?.partners?.logos} />
+        /> */}
+        {/* <LogoCarousel logos={data?.partners?.logos} /> */}
         <IntroductionSection content={data?.introduction} />
         <SectorsSection content={data?.sectors} />
         <ServicesSection content={data?.services} />
         <SplitSection type="case-studies" content={data?.caseStudies} />
-        <SpotlightSection content={data?.spotlight} />
+        {/* <SpotlightSection content={data?.spotlight} /> */}
         <SplitSection
           type="blog"
           content={data?.blog}
@@ -80,7 +80,7 @@ export default async function Home({ params: { locale } }) {
           variant="light"
         />
         <Newsletter locale={locale} />
-        <InfoSection locale={locale} />
+        {/* <InfoSection locale={locale} /> */}
         <Footer locale={locale} />
       </main>
     </TranslationsProvider>

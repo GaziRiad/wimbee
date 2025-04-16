@@ -20,7 +20,7 @@ function ServicesSection({ content }) {
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {content.hubs.map((service, index) => (
+        {content?.hubs?.map((service, index) => (
           <Link
             href={service.url || "/"}
             key={index}

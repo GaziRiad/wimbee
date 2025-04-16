@@ -19,7 +19,7 @@ function IntroductionSection({ content }) {
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {content.blocks.map((block, index) => (
+        {content?.blocks?.map((block, index) => (
           <Link
             href={block.url || "/"}
             key={index}
