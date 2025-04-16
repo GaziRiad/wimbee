@@ -16,13 +16,13 @@ async function Newsletter({ locale = "en" }) {
     <section className="bg-light-200">
       <div className="mx-auto flex max-w-[1568px] flex-col-reverse justify-between gap-8 px-4 py-8 lg:flex-row lg:items-center lg:gap-0 lg:pb-20 lg:pt-12">
         <ul className="flex flex-col gap-2 text-lg">
-          {data.socials.map((social, index) => (
+          {data?.socials?.map((social, index) => (
             <li key={index}>
               <Link
                 href="#"
                 className="text-primary-700 transition-all hover:text-primary-800"
               >
-                {social.title}
+                {social?.title}
               </Link>
             </li>
           ))}

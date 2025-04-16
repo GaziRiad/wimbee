@@ -25,26 +25,26 @@ async function Footer({ locale = "en" }) {
       <div className="mx-auto grid max-w-[1568px] grid-cols-2 gap-y-8 lg:grid-cols-4 xl:grid-cols-6 [&>div:last-child]:col-start-2 lg:[&>div:last-child]:col-start-auto">
         <Link href="/" className="col-span-2 row-span-2 lg:col-span-1">
           <Image
-            src={data.logoUrl}
+            src={data?.logoUrl}
             width={300}
             height={300}
             alt="Wimbee Footer logo"
             className="max-w-40"
           />
         </Link>
-        {orderedFooter.map((menu, index) => (
+        {orderedFooter?.map((menu, index) => (
           <div key={index}>
             <p className="mb-4 font-mono uppercase text-primary-500 2xl:mb-10">
-              {menu.title}
+              {menu?.title}
             </p>
             <ul className="flex flex-col gap-2">
-              {menu.links.map((item, index) => (
+              {menu?.links?.map((item, index) => (
                 <li key={index}>
                   <Link
-                    href={item.url || "/"}
+                    href={item?.url || "/"}
                     className="text-light-300 transition-all hover:text-primary-500"
                   >
-                    {item.title}
+                    {item?.title}
                   </Link>
                 </li>
               ))}
