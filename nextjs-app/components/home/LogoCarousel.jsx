@@ -3,6 +3,8 @@
 import Image from "next/image";
 
 export default function LogoCarousel({ logos }) {
+  if (!logos || logos.length === 0) return null;
+
   return (
     <section className="w-full overflow-hidden">
       <div className="relative py-6 lg:py-12">

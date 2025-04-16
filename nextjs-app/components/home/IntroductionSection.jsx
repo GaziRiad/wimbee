@@ -8,6 +8,8 @@ import { useState } from "react";
 function IntroductionSection({ content }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  if (!content) return null;
+
   return (
     <section className="mx-auto max-w-[1568px] px-4 py-8 lg:pb-20 lg:pt-12">
       <div className="mb-5 flex flex-col items-start justify-between lg:mb-11 lg:flex-row">

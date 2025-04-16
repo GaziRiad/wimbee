@@ -3,6 +3,8 @@ import Tag from "../Tag";
 import Link from "next/link";
 
 function SectorsSection({ content }) {
+  if (!content) return null;
+
   return (
     <section className="bg-[#1A1A1A] px-4 py-8 text-light-200 lg:pb-20 lg:pt-12">
       <div className="mx-auto max-w-[1568px]">
