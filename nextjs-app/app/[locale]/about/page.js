@@ -76,13 +76,13 @@ async function page({ params: { locale } }) {
                   <p key={index}>{p.text}</p>
                 ))}
               </div>
-              {/* <Image
+              <Image
                 src={data.imageUrl}
                 width={600}
                 height={600}
                 alt="Wimbee about us image"
                 className="h-96 w-full rounded-custom lg:h-[620px] lg:max-w-2xl"
-              /> */}
+              />
             </div>
           </div>
         </section>
