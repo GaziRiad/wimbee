@@ -62,12 +62,12 @@ export default async function Home({ params: { locale } }) {
         <link rel="canonical" href={canonicalUrl} />
       </Head>
       <main>
-        <Hero
+        {/* <Hero
           title={data?.hero?.title}
           video={data?.hero?.backgroundVideoUrl}
           locale={locale}
-        />
-        <LogoCarousel logos={data?.partners?.logos} />
+        /> */}
+        {/* <LogoCarousel logos={data?.partners?.logos} /> */}
         <IntroductionSection content={data?.introduction} />
         <SectorsSection content={data?.sectors} />
         <ServicesSection content={data?.services} />
